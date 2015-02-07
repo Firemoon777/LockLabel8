@@ -1,0 +1,17 @@
+Package: ru.firemoon777.LockLabel8Bundle
+Name: LockLabel8Bundle
+Version: 1.0-1
+Description: 
+Section: PreferenceBundles
+Depends: firmware (>= 5.0), mobilesubstrate, preferenceloader
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: firemoon777
+dev: 
+Homepage: 
+Depiction: 
+Maintainer: 
+Icon: 
+

@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9AD3F0601A86490100774066 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD3F05F1A86490100774066 /* Foundation.framework */; };
+		9AD3F06B1A86490100774066 /* LockLabel8.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9AD3F06A1A86490100774066 /* LockLabel8.mm */; };
+		9AD3F0761A86497700774066 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD3F0751A86497700774066 /* UIKit.framework */; };
+		9AD3F0781A86498100774066 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD3F0771A86498100774066 /* libsubstrate.dylib */; };
+		9AD3F07F1A866C4400774066 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD3F05F1A86490100774066 /* Foundation.framework */; };
+		9AD3F0801A866C4400774066 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD3F0751A86497700774066 /* UIKit.framework */; };
+		9AD3F0821A866C4400774066 /* Preferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD3F0811A866C4400774066 /* Preferences.framework */; };
+		9AD3F08D1A866C4400774066 /* LockLabel8BundleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD3F08C1A866C4400774066 /* LockLabel8BundleController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9AD3F05C1A86490100774066 /* LockLabel8.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = LockLabel8.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AD3F05F1A86490100774066 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9AD3F0641A86490100774066 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		9AD3F0651A86490100774066 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		9AD3F0671A86490100774066 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		9AD3F0681A86490100774066 /* LockLabel8-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LockLabel8-Prefix.pch"; sourceTree = "<group>"; };
+		9AD3F0691A86490100774066 /* LockLabel8.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LockLabel8.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		9AD3F06A1A86490100774066 /* LockLabel8.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LockLabel8.mm; sourceTree = "<group>"; };
+		9AD3F06F1A86490100774066 /* LockLabel8.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = LockLabel8.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/LockLabel8.plist; sourceTree = "<group>"; };
+		9AD3F0751A86497700774066 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9AD3F0771A86498100774066 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+		9AD3F07E1A866C4400774066 /* LockLabel8Bundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LockLabel8Bundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AD3F0811A866C4400774066 /* Preferences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Preferences.framework; path = Library/Frameworks/Preferences.framework; sourceTree = DEVELOPER_DIR; };
+		9AD3F0861A866C4400774066 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		9AD3F0871A866C4400774066 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		9AD3F0891A866C4400774066 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		9AD3F08A1A866C4400774066 /* LockLabel8Bundle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LockLabel8Bundle-Info.plist"; sourceTree = "<group>"; };
+		9AD3F08B1A866C4400774066 /* LockLabel8BundleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockLabel8BundleController.h; sourceTree = "<group>"; };
+		9AD3F08C1A866C4400774066 /* LockLabel8BundleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockLabel8BundleController.m; sourceTree = "<group>"; };
+		9AD3F0911A866C4400774066 /* LockLabel8Bundle.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = LockLabel8Bundle.plist; path = Package/Library/PreferenceLoader/Preferences/LockLabel8Bundle.plist; sourceTree = "<group>"; };
+		9AD3F0941A866C4400774066 /* LockLabel8Bundle.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = LockLabel8Bundle.plist; path = Package/Library/PreferenceBundles/LockLabel8Bundle.bundle/LockLabel8Bundle.plist; sourceTree = "<group>"; };
+		9AD3F0951A866C4400774066 /* LockLabel8BundleIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LockLabel8BundleIcon.png; path = Package/Library/PreferenceBundles/LockLabel8Bundle.bundle/LockLabel8BundleIcon.png; sourceTree = "<group>"; };
+		9AD3F0961A866C4400774066 /* LockLabel8BundleIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LockLabel8BundleIcon@2x.png"; path = "Package/Library/PreferenceBundles/LockLabel8Bundle.bundle/LockLabel8BundleIcon@2x.png"; sourceTree = "<group>"; };
+		9AD3F09B1A866C4400774066 /* ru.firemoon777.LockLabel8Bundle.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ru.firemoon777.LockLabel8Bundle.plist; path = Package/var/mobile/Library/Preferences/ru.firemoon777.LockLabel8Bundle.plist; sourceTree = "<group>"; };
+		9AD3F09C1A866C4400774066 /* LockLabel8Bundle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LockLabel8Bundle-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AD3F0581A86490100774066 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AD3F0781A86498100774066 /* libsubstrate.dylib in Frameworks */,
+				9AD3F0761A86497700774066 /* UIKit.framework in Frameworks */,
+				9AD3F0601A86490100774066 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD3F07A1A866C4400774066 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AD3F07F1A866C4400774066 /* Foundation.framework in Frameworks */,
+				9AD3F0821A866C4400774066 /* Preferences.framework in Frameworks */,
+				9AD3F0801A866C4400774066 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9AD3F0511A86490100774066 = {
+			isa = PBXGroup;
+			children = (
+				9AD3F0611A86490100774066 /* LockLabel8 */,
+				9AD3F0831A866C4400774066 /* LockLabel8Bundle */,
+				9AD3F05E1A86490100774066 /* Frameworks */,
+				9AD3F05D1A86490100774066 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9AD3F05D1A86490100774066 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AD3F05C1A86490100774066 /* LockLabel8.dylib */,
+				9AD3F07E1A866C4400774066 /* LockLabel8Bundle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AD3F05E1A86490100774066 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AD3F0771A86498100774066 /* libsubstrate.dylib */,
+				9AD3F0751A86497700774066 /* UIKit.framework */,
+				9AD3F05F1A86490100774066 /* Foundation.framework */,
+				9AD3F0811A866C4400774066 /* Preferences.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AD3F0611A86490100774066 /* LockLabel8 */ = {
+			isa = PBXGroup;
+			children = (
+				9AD3F0691A86490100774066 /* LockLabel8.xm */,
+				9AD3F06A1A86490100774066 /* LockLabel8.mm */,
+				9AD3F0621A86490100774066 /* Package */,
+				9AD3F0661A86490100774066 /* Supporting Files */,
+			);
+			path = LockLabel8;
+			sourceTree = "<group>";
+		};
+		9AD3F0621A86490100774066 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				9AD3F0631A86490100774066 /* DEBIAN */,
+				9AD3F06C1A86490100774066 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		9AD3F0631A86490100774066 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				9AD3F0641A86490100774066 /* control.txt */,
+				9AD3F0651A86490100774066 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		9AD3F0661A86490100774066 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AD3F0671A86490100774066 /* PackageVersion.plist */,
+				9AD3F0681A86490100774066 /* LockLabel8-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9AD3F06C1A86490100774066 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				9AD3F06D1A86490100774066 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		9AD3F06D1A86490100774066 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				9AD3F06E1A86490100774066 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		9AD3F06E1A86490100774066 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				9AD3F06F1A86490100774066 /* LockLabel8.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+		9AD3F0831A866C4400774066 /* LockLabel8Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				9AD3F08B1A866C4400774066 /* LockLabel8BundleController.h */,
+				9AD3F08C1A866C4400774066 /* LockLabel8BundleController.m */,
+				9AD3F0841A866C4400774066 /* Package */,
+				9AD3F0881A866C4400774066 /* Supporting Files */,
+			);
+			path = LockLabel8Bundle;
+			sourceTree = "<group>";
+		};
+		9AD3F0841A866C4400774066 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				9AD3F0851A866C4400774066 /* DEBIAN */,
+				9AD3F08E1A866C4400774066 /* Library */,
+				9AD3F0971A866C4400774066 /* var */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		9AD3F0851A866C4400774066 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				9AD3F0861A866C4400774066 /* control.txt */,
+				9AD3F0871A866C4400774066 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		9AD3F0881A866C4400774066 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AD3F0891A866C4400774066 /* PackageVersion.plist */,
+				9AD3F08A1A866C4400774066 /* LockLabel8Bundle-Info.plist */,
+				9AD3F09C1A866C4400774066 /* LockLabel8Bundle-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9AD3F08E1A866C4400774066 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				9AD3F08F1A866C4400774066 /* PreferenceLoader */,
+				9AD3F0921A866C4400774066 /* PreferenceBundles */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		9AD3F08F1A866C4400774066 /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				9AD3F0901A866C4400774066 /* Preferences */,
+			);
+			name = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		9AD3F0901A866C4400774066 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				9AD3F0911A866C4400774066 /* LockLabel8Bundle.plist */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		9AD3F0921A866C4400774066 /* PreferenceBundles */ = {
+			isa = PBXGroup;
+			children = (
+				9AD3F0931A866C4400774066 /* ___PACKAGENAME___.bundle */,
+			);
+			name = PreferenceBundles;
+			sourceTree = "<group>";
+		};
+		9AD3F0931A866C4400774066 /* ___PACKAGENAME___.bundle */ = {
+			isa = PBXGroup;
+			children = (
+				9AD3F0941A866C4400774066 /* LockLabel8Bundle.plist */,
+				9AD3F0951A866C4400774066 /* LockLabel8BundleIcon.png */,
+				9AD3F0961A866C4400774066 /* LockLabel8BundleIcon@2x.png */,
+			);
+			name = "___PACKAGENAME___.bundle";
+			sourceTree = "<group>";
+		};
+		9AD3F0971A866C4400774066 /* var */ = {
+			isa = PBXGroup;
+			children = (
+				9AD3F0981A866C4400774066 /* mobile */,
+			);
+			name = var;
+			sourceTree = "<group>";
+		};
+		9AD3F0981A866C4400774066 /* mobile */ = {
+			isa = PBXGroup;
+			children = (
+				9AD3F0991A866C4400774066 /* Library */,
+			);
+			name = mobile;
+			sourceTree = "<group>";
+		};
+		9AD3F0991A866C4400774066 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				9AD3F09A1A866C4400774066 /* Preferences */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		9AD3F09A1A866C4400774066 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				9AD3F09B1A866C4400774066 /* ru.firemoon777.LockLabel8Bundle.plist */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9AD3F0591A86490100774066 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD3F07B1A866C4400774066 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9AD3F05B1A86490100774066 /* LockLabel8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AD3F0721A86490100774066 /* Build configuration list for PBXNativeTarget "LockLabel8" */;
+			buildPhases = (
+				9AD3F0561A86490100774066 /* ShellScript */,
+				9AD3F0571A86490100774066 /* Sources */,
+				9AD3F0581A86490100774066 /* Frameworks */,
+				9AD3F0591A86490100774066 /* Headers */,
+				9AD3F05A1A86490100774066 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LockLabel8;
+			productName = LockLabel8;
+			productReference = 9AD3F05C1A86490100774066 /* LockLabel8.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		9AD3F07D1A866C4400774066 /* LockLabel8Bundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AD3F09F1A866C4400774066 /* Build configuration list for PBXNativeTarget "LockLabel8Bundle" */;
+			buildPhases = (
+				9AD3F0791A866C4400774066 /* Sources */,
+				9AD3F07A1A866C4400774066 /* Frameworks */,
+				9AD3F07B1A866C4400774066 /* Headers */,
+				9AD3F07C1A866C4400774066 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LockLabel8Bundle;
+			productName = LockLabel8Bundle;
+			productReference = 9AD3F07E1A866C4400774066 /* LockLabel8Bundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AD3F0521A86490100774066 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 9AD3F0551A86490100774066 /* Build configuration list for PBXProject "LockLabel8" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9AD3F0511A86490100774066;
+			productRefGroup = 9AD3F05D1A86490100774066 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AD3F05B1A86490100774066 /* LockLabel8 */,
+				9AD3F07D1A866C4400774066 /* LockLabel8Bundle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9AD3F0561A86490100774066 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		9AD3F05A1A86490100774066 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+		9AD3F07C1A866C4400774066 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AD3F0571A86490100774066 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AD3F06B1A86490100774066 /* LockLabel8.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD3F0791A866C4400774066 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AD3F08D1A866C4400774066 /* LockLabel8BundleController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9AD3F0701A86490100774066 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		9AD3F0711A86490100774066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		9AD3F0731A86490100774066 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LockLabel8/LockLabel8-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		9AD3F0741A86490100774066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LockLabel8/LockLabel8-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+		9AD3F09D1A866C4400774066 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LockLabel8Bundle/LockLabel8Bundle-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				INFOPLIST_FILE = "LockLabel8Bundle/LockLabel8Bundle-Info.plist";
+				INSTALL_PATH = /Library/PreferenceBundles;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		9AD3F09E1A866C4400774066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LockLabel8Bundle/LockLabel8Bundle-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				INFOPLIST_FILE = "LockLabel8Bundle/LockLabel8Bundle-Info.plist";
+				INSTALL_PATH = /Library/PreferenceBundles;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AD3F0551A86490100774066 /* Build configuration list for PBXProject "LockLabel8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AD3F0701A86490100774066 /* Debug */,
+				9AD3F0711A86490100774066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AD3F0721A86490100774066 /* Build configuration list for PBXNativeTarget "LockLabel8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AD3F0731A86490100774066 /* Debug */,
+				9AD3F0741A86490100774066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AD3F09F1A866C4400774066 /* Build configuration list for PBXNativeTarget "LockLabel8Bundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AD3F09D1A866C4400774066 /* Debug */,
+				9AD3F09E1A866C4400774066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9AD3F0521A86490100774066 /* Project object */;
+}
